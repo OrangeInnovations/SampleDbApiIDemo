@@ -6,7 +6,7 @@ using Sox.Services.Models;
 
 namespace Sox.Services.DataServices
 {
-    interface IDataServices
+    public interface IDataServices
     {
         Task<List<CustomerMaster>> FindAllCustomerMasters();
         Task<List<FrequencyMaster>> FindAllFrequencyMaster();
