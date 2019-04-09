@@ -36,7 +36,32 @@ namespace PWCWeb.Controllers
         }
 
 
+        [ProducesResponseType(typeof(IEnumerable<FrequencyMasterVm>), 200)]
+        [HttpGet("FrequencyMasters", Name = "FrequencyMasters")]
+        public async Task<IActionResult> FindAllFrequencyMastersAsync(string authUserId)
+        {
 
-       
+            var list = await _dataServices.FindAllFrequencyMasters();
+
+            var finalList = _mapper.Map<List<FrequencyMasterVm>>(list);
+
+
+            return Ok(finalList);
+        }
+
+        [ProducesResponseType(typeof(IEnumerable<UsecaseMasterVm>), 200)]
+        [HttpGet("UsecaseMasters", Name = "UsecaseMasters")]
+        public async Task<IActionResult> FindAllUsecaseMastersAsync(string authUserId)
+        {
+
+            var list = await _dataServices.FindAllUsecaseMasters();
+
+            var finalList = _mapper.Map<List<UsecaseMasterVm>>(list);
+
+
+            return Ok(finalList);
+        }
+
+
     }
 }

@@ -19,12 +19,12 @@ namespace Sox.Services.DataServices
             return await _sampleDbContext.CustomerMaster.ToListAsync();
         }
 
-        public async Task<List<FrequencyMaster>> FindAllFrequencyMaster()
+        public async Task<List<FrequencyMaster>> FindAllFrequencyMasters()
         {
             return await _sampleDbContext.FrequencyMaster.ToListAsync();
         }
 
-        public async Task<List<UsecaseMaster>> FindAllUsecaseMaster()
+        public async Task<List<UsecaseMaster>> FindAllUsecaseMasters()
         {
             return await _sampleDbContext.UsecaseMaster.ToListAsync();
         }

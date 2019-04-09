@@ -9,7 +9,7 @@ namespace Sox.Services.DataServices
     public interface IDataServices
     {
         Task<List<CustomerMaster>> FindAllCustomerMasters();
-        Task<List<FrequencyMaster>> FindAllFrequencyMaster();
-        Task<List<UsecaseMaster>> FindAllUsecaseMaster();
+        Task<List<FrequencyMaster>> FindAllFrequencyMasters();
+        Task<List<UsecaseMaster>> FindAllUsecaseMasters();
     }
 }
