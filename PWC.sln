@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sox.Services", "Sox.Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F620C97-846A-4833-9E32-DE6B145F2185}"
 	ProjectSection(SolutionItems) = preProject
+		DB-script.sql = DB-script.sql
+		Readme.md = Readme.md
 		Sample_db script.sql = Sample_db script.sql
 		SQL script.txt = SQL script.txt
 	EndProjectSection
